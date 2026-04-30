@@ -19,4 +19,10 @@ heroes.map(hero => {
     return `hero is ${hero}`;
 }); // nO NEED TO EXPLICITLY DEFINE THE HERO
 getUpper("neel");
+function consoleError(errmsg) {
+    console.log(errmsg);
+}
+function handleError(errmsg) {
+    throw new Error(errmsg); //Never is used when we want to throw an error
+}
 export {};
