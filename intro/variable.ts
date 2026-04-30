@@ -20,5 +20,6 @@ function getHero(){
 
 hero = getHero()
 
+let example: any // example can be any datatype
 
 export{}
