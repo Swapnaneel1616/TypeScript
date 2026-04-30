@@ -32,6 +32,21 @@ function createUsers(user: User):User{
 createUsers({name:"neel", email: "neel@example.com", isActive: true})
 
 
+type checkUser = {
+    readonly _id: string; // No one can change the value but only read it 
+    name:string; 
+    email: string;
+    isActive:boolean;
+    creditCard?: number; // Optional Property
+}
 
+let userChecking: checkUser = {
+    _id: "12345",
+    name: "neel",
+    email: "neel@neel.com",
+    isActive: true,
+}
+
+userChecking.email = "neel@example.com" // We can chnage the email but not the id because it is read only
 
 export{}
