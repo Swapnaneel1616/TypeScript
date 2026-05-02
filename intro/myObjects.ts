@@ -37,7 +37,7 @@ type checkUser = {
     name:string; 
     email: string;
     isActive:boolean;
-    creditCard?: number; // Optional Property
+    creditCardDetails?: number; // Optional Property
 }
 
 let userChecking: checkUser = {
@@ -48,5 +48,19 @@ let userChecking: checkUser = {
 }
 
 userChecking.email = "neel@example.com" // We can chnage the email but not the id because it is read only
+
+
+type cardNumber = {
+    cardnumber: string;
+}
+
+type cardDate = {
+    cardDate: string;
+}
+
+
+type cardDetails = cardNumber & cardDate & {
+    cvv: number;
+}
 
 export{}
