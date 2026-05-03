@@ -43,3 +43,6 @@ const myArray : (string|number|boolean)[] = [1, "hello", true]
 let mySeatAllotment: "aisle"|"middle"|"window" 
 
 mySeatAllotment = "aisle"
+
+
+export{}
