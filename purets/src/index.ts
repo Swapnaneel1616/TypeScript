@@ -9,7 +9,7 @@
 // }
 class User{
 
-    private _coureCount = 1
+    protected _coureCount = 1
 
 
     readonly city: string = "kolkata"
@@ -35,8 +35,29 @@ class User{
 }
 
 
+class SubUser extends User{
+    isFamily: boolean = true
+
+    set courseCountUpdated(courseUpdate:number){
+        this._coureCount = courseUpdate
+    }
+
+    get courseCountUpdated():string{
+        return `Course Count is ${this._coureCount}`
+    }
+}
+
+
 const neel = new User("h@h.com" ,"neel")
 
 console.log(neel.email)
 console.log(neel.name)
 console.log(neel.city)
+neel.courseCount = 23
+console.log(neel.courseCount)
+
+
+
+const sub_neel = new SubUser("new@example.com" , "new_user")
+sub_neel.courseCountUpdated = 4
+console.log("The name "+ sub_neel.name + " The email "+ sub_neel.email +" with course count"+ sub_neel.courseCountUpdated)
