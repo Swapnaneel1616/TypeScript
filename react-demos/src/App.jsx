@@ -1,9 +1,11 @@
-import Footer from "./Footer"
-import Greet from "./greet"
-import Header from "./Header"
-import MainContent from "./MainContent"
-import ProductInfo from "./ProductInfo"
-import UserList from "./UserList"
+import Footer from "./component/Footer"
+import Greet from "./component/greet"
+import Header from "./component/Header"
+import MainContent from "./component/MainContent"
+import Person from "./component/Person"
+import ProductInfo from "./component/ProductInfo"
+import UserList from "./component/UserList"
+import Weather from "./component/Weather"
 
 const App = () =>{
   return(
@@ -11,6 +13,8 @@ const App = () =>{
       <Greet />
       <ProductInfo />
       <UserList />
+      <Person name="Alice" age={25} />
+      <Weather temperature={20} />
     </div>
   )
   

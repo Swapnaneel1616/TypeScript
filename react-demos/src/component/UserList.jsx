@@ -10,7 +10,7 @@ const UserList = () => {
     <div>
       <main>
         {users.map(({id , name, age}) => (
-            <ul key={Math.random()}>
+            <ul key={id}>
             <li>{name}</li>
             <li>{age}</li>
             <li>{id}</li>
