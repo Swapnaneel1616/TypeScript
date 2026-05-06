@@ -1,20 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
+import Counter from './components/Counter'
+import ArrayState from './components/ArrayState'
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
-  const increment = () => {
-    setCount(count + 1)
-  }
-  const decrement = () =>{
-    setCount(count - 1)
-  }
   return (
     <div>
-      <h1>Count: {count}</h1>  
-      <button onClick={increment}>+</button>   
-      <button onClick={decrement}>-</button>  
+      <Counter />
+      <ArrayState />  
     </div>
   )
 }
