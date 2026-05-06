@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Counter from './components/Counter'
 import ArrayState from './components/ArrayState'
 import ObjectState from './components/ObjectState'
+import MainComponent from './components/MainComponent'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Counter />
       <ArrayState />
       <ObjectState />  
+      <MainComponent />
     </div>
   )
 }
