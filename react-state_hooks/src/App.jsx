@@ -9,6 +9,7 @@ import Todo from './components/Todo'
 import Profile from './components/Profile'
 import Shooping from './components/Shooping'
 import CopyInput from './components/copyInput'
+import Switch from './components/Switch'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Profile />
       <Shooping />
       <CopyInput />
+      <Switch />
     </div>
   )
 }
